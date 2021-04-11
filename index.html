@@ -9,9 +9,8 @@
 <body>
 
     <div class="container">
-        <!-- <img src="static/ASME_Logo.PNG" alt="ASME_Logo" class="logo"> -->
         
-        <h1>...</h1>
+        <h1>Inspection Record</h1>
 
         <form action="/submit" method="POST">
             <div class="form-group">
@@ -20,6 +19,14 @@
                   type="text"
                   name="Harness"
                   placeholder="Harness type"
+                />
+            <form action="/submit" method="POST">
+            <div class="form-group">
+                <h3>Harness Serial No.:</h3>
+                <input
+                  type="text"
+                  name="Harness Serial"
+                  placeholder="Harness Serial No."
                 />
               </div>
               <div class="form-group">
@@ -32,20 +39,44 @@
                   <option value="Option 4">Option 4</option>
                 </select>
               </div>
+              <form action="/submit" method="POST">
+                <div class="form-group">
+                    <h3>Lanyard Serial No.:</h3>
+                    <input
+                      type="text"
+                      name="Lanyard Serial"
+                      placeholder="Lanyard Serial No."
+                    />
               <div class="form-group">
                 <h3>Year of fabrication</h3>
                 <input
-                  type="Year of fabrication"
+                  type="text"
                   name="Year of fabrication"
                   placeholder="Year of fabrication"
                 />
               </div>
               <div class="form-group">
-                <h3>Year of fabrication</h3>
+                <h3>Date of Purchase</h3>
                 <input
-                  type="Year of fabrication"
-                  name="Year of fabrication"
-                  placeholder="Year of fabrication"
+                  type="date"
+                  name="Date of Purchase"
+                  placeholder="Date of Purchase"
+                />
+              </div>
+              <div class="form-group">
+                <h3>Date first in service</h3>
+                <input
+                  type="date"
+                  name="Date first in service"
+                  placeholder="Date first in service"
+                />
+              </div>
+              <div class="form-group">
+                <h3>Name of user:</h3>
+                <input
+                  type="text"
+                  name="Name of user"
+                  placeholder="Name of user"
                 />
               </div>
               <input type="submit" value="Submit" class="btn" />
