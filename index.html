@@ -1,88 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>....</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Custom style sheet -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <title>Harness Inspection Form</title>
 </head>
+
 <body>
-
+  <section class="form-section">
     <div class="container">
-        
-        <h1>Inspection Record</h1>
 
-        <form action="/submit" method="POST">
-            <div class="form-group">
-                <h3>Harness type:</h3>
-                <input
-                  type="text"
-                  name="Harness"
-                  placeholder="Harness type"
-                />
-            <form action="/submit" method="POST">
-            <div class="form-group">
-                <h3>Harness Serial No.:</h3>
-                <input
-                  type="text"
-                  name="Harness Serial"
-                  placeholder="Harness Serial No."
-                />
-              </div>
-              <div class="form-group">
-                <h3>Lanyard type:</h3>
-                <select name="dealer">
-                  <option value="">Select Option</option>
-                  <option value="Option 1">Option 1</option>
-                  <option value="Option 2">Option 2</option>
-                  <option value="Option 3">Option 3</option>
-                  <option value="Option 4">Option 4</option>
-                </select>
-              </div>
-              <form action="/submit" method="POST">
-                <div class="form-group">
-                    <h3>Lanyard Serial No.:</h3>
-                    <input
-                      type="text"
-                      name="Lanyard Serial"
-                      placeholder="Lanyard Serial No."
-                    />
-              <div class="form-group">
-                <h3>Year of fabrication</h3>
-                <input
-                  type="text"
-                  name="Year of fabrication"
-                  placeholder="Year of fabrication"
-                />
-              </div>
-              <div class="form-group">
-                <h3>Date of Purchase</h3>
-                <input
-                  type="date"
-                  name="Date of Purchase"
-                  placeholder="Date of Purchase"
-                />
-              </div>
-              <div class="form-group">
-                <h3>Date first in service</h3>
-                <input
-                  type="date"
-                  name="Date first in service"
-                  placeholder="Date first in service"
-                />
-              </div>
-              <div class="form-group">
-                <h3>Name of user:</h3>
-                <input
-                  type="text"
-                  name="Name of user"
-                  placeholder="Name of user"
-                />
-              </div>
-              <input type="submit" value="Submit" class="btn" />
-        </form>
+      <h1>Inspection Record</h1>
 
+      <form action="/submit" method="POST">
+        <div class="form-group">
+          <h3>Harness type:</h3>
+          <input type="text" name="Harness" placeholder="Harness type" />
+          <div class="form-group">
+            <h3>Harness Serial No.:</h3>
+            <input type="text" name="Harness Serial" placeholder="Harness Serial No." />
+          </div>
+          <div class="form-group">
+            <h3>Lanyard type:</h3>
+            <select name="dealer">
+              <option value="">Select Option</option>
+              <option value="Option 1">Option 1</option>
+              <option value="Option 2">Option 2</option>
+              <option value="Option 3">Option 3</option>
+              <option value="Option 4">Option 4</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <h3>Lanyard Serial No.:</h3>
+            <input type="text" name="Lanyard Serial" placeholder="Lanyard Serial No." />
+            <div class="form-group">
+              <h3>Year of fabrication</h3>
+              <input type="text" name="Year of fabrication" placeholder="Year of fabrication" />
+            </div>
+            <div class="form-group">
+              <h3>Date of Purchase</h3>
+              <input type="date" name="Date of Purchase" placeholder="Date of Purchase" />
+            </div>
+            <div class="form-group">
+              <h3>Date first in service</h3>
+              <input type="date" name="Date first in service" placeholder="Date first in service" />
+            </div>
+            <div class="form-group">
+              <h3>Name of user:</h3>
+              <input type="text" name="Name of user" placeholder="Name of user" />
+            </div>
+            <input type="submit" value="Submit" class="btn" />
+          </div>
+        </div>
+      </form>
     </div>
-    
+  </section>
 </body>
+
 </html>
