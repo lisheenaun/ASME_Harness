@@ -21,19 +21,22 @@
   <section class="form-section">
     <form class="inspection-form" action="/submit" method="POST">
       <h1>Inspection Record</h1>
-
-      <label for="harness_type">Harness Type</label>
-      <input class="text-input" type="text" id="name" name="harness_type" placeholder="Harness Type" required>
-
-      <label for="harness_serial">Harness Serial No.</label>
-      <input class="text-input" type="text" id="harness_serial" name="harness_serial" placeholder="Harness Serial No."
-        required>
-
       <div class="row">
-        <div class="col-3 col-sm-5">
+        <div class="col-6">
+          <label for="harness_type">Harness Type</label>
+          <input class="text-input" type="text" id="name" name="harness_type" placeholder="Harness Type" required>
+        </div>
+        <div class="col-6">
+          <label for="harness_serial">Harness Serial No.</label>
+          <input class="text-input" type="text" id="harness_serial" name="harness_serial"
+            placeholder="Harness Serial No." required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
           <label for="lanyard_type">Lanyard Type: </label>
         </div>
-        <div class="col-9 col-sm-7">
+        <div class="col-6">
           <select name="lanyard_type" id="lanyard_type">
             <option value="Option 1">Option 1</option>
             <option value="Option 2">Option 2</option>
@@ -42,28 +45,43 @@
           </select>
         </div>
       </div>
-
-      <label for="lanyard_serial">Lanyard Serial No.:</label>
-      <input class="text-input" type="text" id="lanyard_serial" name="lanyard_serial" placeholder="Lanyard Serial"
-        required>
-
-      <label for="year_of_fabrication">Year of fabrication</label>
-      <input class="text-input" type="date" id="year_of_fabrication" name="year_of_fabrication" required>
-
-      <label for="date_of_purchase">Date of Purchase</label>
-      <input class="text-input" type="date" id="date_of_purchase" name="date_of_purchase" required>
-
-      <label for="date_first_service">Date First in Service</label>
-      <input class="text-input" type="date" id="date_first_service" name="date_first_service" required>
-
-      <label for="name_of_user">Name of User</label>
-      <input class="text-input" type="text" id="name_of_user" name="name_of_user" required>
-
-      <div id="button-container">
-        <button type="submit" class="btn btn-lg btn-info">Submit Form <i class="fa fa-check-square"
-            aria-hidden="true"></i></button>
+      <div class="row">
+        <div class="col-6">
+          <label for="lanyard_serial">Lanyard Serial No.:</label>
+          <input class="text-input" type="text" id="lanyard_serial" name="lanyard_serial" placeholder="Lanyard Serial"
+            required>
+        </div>
+        <div class="col-6">
+          <label for="year_of_fabrication">Year of fabrication</label>
+          <input class="text-input" type="date" id="year_of_fabrication" name="year_of_fabrication" required>
+        </div>
       </div>
-
+      <div class="row">
+        <div class="col-6">
+          <label for="date_of_purchase">Date of Purchase</label>
+          <input class="text-input" type="date" id="date_of_purchase" name="date_of_purchase" required>
+        </div>
+        <div class="col-6">
+          <label for="date_first_service">Date First in Service</label>
+          <input class="text-input" type="date" id="date_first_service" name="date_first_service" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <label for="name_of_user">Name of User</label>
+          <input class="text-input" type="text" id="name_of_user" name="name_of_user" required>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-12">
+          <div id="button-container">
+            <button type="submit" class="btn btn-lg btn-info">Submit Form <i class="fa fa-check-square"
+                aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </div>
+      </div>
     </form>
   </section>
   <!-- JS, Popper.js, and jQuery -->
