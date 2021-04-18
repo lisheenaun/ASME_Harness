@@ -24,7 +24,12 @@
       <div class="row">
         <div class="col-6">
           <label for="harness_type">Harness Type</label>
-          <input class="text-input" type="text" id="name" name="harness_type" placeholder="Harness Type" required>
+          <select name="lanyard_type" id="lanyard_type">
+            <option value="Option 1">Option 1</option>
+            <option value="Option 2">Option 2</option>
+            <option value="Option 3">Option 3</option>
+            <option value="Option 4">Option 4</option>
+          </select>
         </div>
         <div class="col-6">
           <label for="harness_serial">Harness Serial No.</label>
@@ -34,9 +39,7 @@
       </div>
       <div class="row">
         <div class="col-6">
-          <label for="lanyard_type">Lanyard Type: </label>
-        </div>
-        <div class="col-6">
+          <label for="lanyard_type">Lanyard Type</label>
           <select name="lanyard_type" id="lanyard_type">
             <option value="Option 1">Option 1</option>
             <option value="Option 2">Option 2</option>
@@ -44,30 +47,30 @@
             <option value="Option 4">Option 4</option>
           </select>
         </div>
-      </div>
-      <div class="row">
         <div class="col-6">
-          <label for="lanyard_serial">Lanyard Serial No.:</label>
+          <label for="lanyard_serial">Lanyard Serial No.</label>
           <input class="text-input" type="text" id="lanyard_serial" name="lanyard_serial" placeholder="Lanyard Serial"
             required>
         </div>
-        <div class="col-6">
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-3">
           <label for="year_of_fabrication">Year of fabrication</label>
           <input class="text-input" type="date" id="year_of_fabrication" name="year_of_fabrication" required>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-6">
+        <div class="col-3">
           <label for="date_of_purchase">Date of Purchase</label>
           <input class="text-input" type="date" id="date_of_purchase" name="date_of_purchase" required>
         </div>
-        <div class="col-6">
+        <div class="col-3">
           <label for="date_first_service">Date First in Service</label>
           <input class="text-input" type="date" id="date_first_service" name="date_first_service" required>
         </div>
       </div>
+      <hr>
       <div class="row">
-        <div class="col-6">
+        <div class="col-12">
           <label for="name_of_user">Name of User</label>
           <input class="text-input" type="text" id="name_of_user" name="name_of_user" required>
         </div>
