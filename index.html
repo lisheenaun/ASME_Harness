@@ -5,6 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap, Font-Awesome, CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+    integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg=="
+    crossorigin="anonymous" />
   <!-- Custom style sheet -->
   <link href="assets/css/style.css" rel="stylesheet">
   <title>Harness Inspection Form</title>
@@ -12,54 +19,71 @@
 
 <body>
   <section class="form-section">
-    <div class="container">
-
+    <form class="inspection-form" action="/submit" method="POST">
       <h1>Inspection Record</h1>
 
-      <form action="/submit" method="POST">
-        <div class="form-group">
-          <h3>Harness type:</h3>
-          <input type="text" name="Harness" placeholder="Harness type" />
-          <div class="form-group float-right">
-            <h3>Harness Serial No.:</h3>
-            <input type="text" name="Harness Serial" placeholder="Harness Serial No." />
-          </div>
-          <div class="form-group">
-            <h3>Lanyard type:</h3>
-            <select name="dealer">
-              <option value="">Select Option</option>
-              <option value="Option 1">Option 1</option>
-              <option value="Option 2">Option 2</option>
-              <option value="Option 3">Option 3</option>
-              <option value="Option 4">Option 4</option>
-            </select>
-          </div>
+      <label for="harness_type">Harness Type</label>
+      <input class="text-input" type="text" id="name" name="harness_type" placeholder="Harness Type" required>
 
-          <div class="form-group">
-            <h3>Lanyard Serial No.:</h3>
-            <input type="text" name="Lanyard Serial" placeholder="Lanyard Serial No." />
-            <div class="form-group">
-              <h3>Year of fabrication</h3>
-              <input type="text" name="Year of fabrication" placeholder="Year of fabrication" />
-            </div>
-            <div class="form-group">
-              <h3>Date of Purchase</h3>
-              <input type="date" name="Date of Purchase" placeholder="Date of Purchase" />
-            </div>
-            <div class="form-group">
-              <h3>Date first in service</h3>
-              <input type="date" name="Date first in service" placeholder="Date first in service" />
-            </div>
-            <div class="form-group">
-              <h3>Name of user:</h3>
-              <input type="text" name="Name of user" placeholder="Name of user" />
-            </div>
-            <input type="submit" value="Submit" class="btn" />
-          </div>
+      <label for="harness_serial">Harness Serial No.</label>
+      <input class="text-input" type="text" id="harness_serial" name="harness_serial" placeholder="Harness Serial No."
+        required>
+
+      <div class="row">
+        <div class="col-3 col-sm-5">
+          <label for="lanyard_type">Lanyard Type: </label>
         </div>
-      </form>
-    </div>
+        <div class="col-9 col-sm-7">
+          <select name="lanyard_type" id="lanyard_type">
+            <option value="Option 1">Option 1</option>
+            <option value="Option 2">Option 2</option>
+            <option value="Option 3">Option 3</option>
+            <option value="Option 4">Option 4</option>
+          </select>
+        </div>
+      </div>
+
+      <label for="lanyard_serial">Lanyard Serial No.:</label>
+      <input class="text-input" type="text" id="lanyard_serial" name="lanyard_serial" placeholder="Lanyard Serial"
+        required>
+
+      <label for="year_of_fabrication">Year of fabrication</label>
+      <input class="text-input" type="date" id="year_of_fabrication" name="year_of_fabrication" required>
+
+      <label for="date_of_purchase">Date of Purchase</label>
+      <input class="text-input" type="date" id="date_of_purchase" name="date_of_purchase" required>
+
+      <label for="date_first_service">Date First in Service</label>
+      <input class="text-input" type="date" id="date_first_service" name="date_first_service" required>
+
+      <label for="name_of_user">Name of User</label>
+      <input class="text-input" type="text" id="name_of_user" name="name_of_user" required>
+
+      <div id="button-container">
+        <button type="submit" class="btn btn-lg btn-info">Submit Form <i class="fa fa-check-square"
+            aria-hidden="true"></i></button>
+      </div>
+
+    </form>
   </section>
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
+  <!-- Date Input Script -->
+  <script>
+    var textbox = document.getElementById('booking-date')
+    textbox.onfocus = function (event) {
+      this.type = 'date';
+      this.focus();
+    }
+  </script>
 </body>
 
 </html>
