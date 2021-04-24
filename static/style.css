@@ -13,7 +13,7 @@ h1 {
 
 .form-section {
 	clear: left;
-	background: url("../images/frame.jpg");
+	background: url("frame.jpg");
 	background-size: cover;
 	background-position: center;
 	min-height: 700px;
